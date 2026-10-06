@@ -1,0 +1,41 @@
+# ============ Python ============
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ============ 虚拟环境 ============
+.venv/
+venv/
+env/
+
+# ============ 测试与覆盖率 ============
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# ============ 密钥与配置（仓库是 Public，这一段最重要）============
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ============ 日志与运行时产物 ============
+*.log
+logs/
+
+# ============ 编辑器与系统 ============
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ============ 数据库与临时文件 ============
+*.sqlite3
+*.db
+tmp/

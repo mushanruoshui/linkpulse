@@ -64,5 +64,3 @@ ops/          # 运维脚本（provision.sh 等）
 - 测试：新增功能须带测试，`pytest` 全绿方可合并
 
 ## License
-
-MIT

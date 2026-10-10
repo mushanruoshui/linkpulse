@@ -1,0 +1,17 @@
+[Unit]
+Description=LinkPulse API (FastAPI + uvicorn)
+After=network.target
+
+[Service]
+Type=simple
+User=dev
+Group=dev
+WorkingDirectory=/home/dev/projects/linkpulse
+Environment="PATH=/home/dev/projects/linkpulse/.venv/bin"
+Environment="PYTHONUNBUFFERED=1"
+ExecStart=/home/dev/projects/linkpulse/.venv/bin/uvicorn app.main:app --host 0.0.0.0 --port 8000
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
